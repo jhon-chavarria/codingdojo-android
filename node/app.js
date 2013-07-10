@@ -45,6 +45,7 @@ app.get("/",controllers.pages.home);
 var server = require('http').createServer(app)
 var WebSocket = require("socket.io").listen( server );
 WebSocket.set('log level', 0);
+WebSocket.set('transports', ['xhr-polling']);
 
 /*
  * Setup Api
