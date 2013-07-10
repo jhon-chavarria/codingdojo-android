@@ -50,7 +50,7 @@ WebSocket.set('transports', ['xhr-polling']);
 /*
  * Setup Api
  **/
-controllers.api.setup(models, WebSocket);
+controllers.api.setup(models, WebSocket, config);
 
 WebSocket.sockets.on("connection", controllers.api.webSocketStart);
 
