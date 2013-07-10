@@ -1,7 +1,6 @@
-/**
- * Created with IntelliJ IDEA.
- * User: paulomcnally
- * Date: 7/10/13
- * Time: 12:10 PM
- * To change this template use File | Settings | File Templates.
- */
+var mongoose = require('mongoose');
+var config = require('../config');
+
+var db = mongoose.createConnection( config.mongodb.url );
+
+exports.data = require("./data").setup( mongoose, db );
