@@ -81,7 +81,7 @@ exports.get = function(req, res){
 exports.demo = function(req, res){
     function out(){
         request.post(
-            'http://localhost:8000/api/post',
+            'http://test.clov3r.net/api/post',
             { form: { name: 'demo', email: 'demo@demo.com', message: 'Hola mundo' } },
             function (error, response, body) {
                 if (!error && response.statusCode == 200) {
