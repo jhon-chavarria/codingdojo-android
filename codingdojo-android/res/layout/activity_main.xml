@@ -13,18 +13,18 @@
         android:id="@+id/read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/send"
-        android:layout_alignRight="@+id/send"
-        android:layout_below="@+id/send"
+        android:layout_alignLeft="@+id/send_data"
+        android:layout_alignRight="@+id/send_data"
+        android:layout_below="@+id/send_data"
         android:onClick="GoToRead"
         android:layout_marginTop="16dp"
         android:text="Ver comentarios" />
 
     <Button
-        android:id="@+id/send"
+        android:id="@+id/send_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/header_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:onClick="GoToSend"

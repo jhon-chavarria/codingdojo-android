@@ -8,4 +8,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SendActivity" >
 
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:text="Envio de comentario"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/send_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comment"
+        android:layout_below="@+id/comment"
+        android:layout_marginTop="16dp"
+        android:onClick="SendData"
+        android:text="Enviar" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/email"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Comentario"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/header_text"
+        android:layout_below="@+id/header_text"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Nombres" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
 </RelativeLayout>
