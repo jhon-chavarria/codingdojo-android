@@ -1,17 +1,35 @@
+##### How to run?
+
     node app.js
-    Port: 80
+
+##### How to change yout domain
+
+    config.js replace http://jhon.clov3r.net to you're domain
+
+##### How to change port
+    app.js replace 4000 to you're port
 
 
-*** Send data ***
+
+##### How to sed data
     
-    /api/post
+    Url: /api/post
     Params: name, email, message
 
-*** Get data ***
+##### How to get data
     
-    /api/post
-    [{"id":"51dddb458f55bde044000003","name":"demo","email":"demo@demo.com","message":"Hola mundo","registered":"2013-07-10T22:08:05.666Z"}]
+    Url: /api/get
+    Response:
+    [
+        {
+            "id":"51dddb458f55bde044000003",
+            "name":"demo",
+            "email":"demo@demo.com",
+            "message":"Hola mundo",
+            "registered":"2013-07-10T22:08:05.666Z"
+        }
+    ]
 
-*** Insert example data ***
+##### How to insert example data
 
     /api/demo
