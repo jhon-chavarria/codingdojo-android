@@ -2,7 +2,7 @@
 
     node app.js
 
-##### How to change yout domain
+##### How to change you're domain
 
     config.js replace http://jhon.clov3r.net to you're domain
 
