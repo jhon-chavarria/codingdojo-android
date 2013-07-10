@@ -32,4 +32,4 @@
 
 ##### How to insert example data
 
-    /api/demo
+    Url: /api/demo
