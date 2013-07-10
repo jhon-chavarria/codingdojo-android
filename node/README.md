@@ -11,7 +11,7 @@
 
 
 
-##### How to sed data
+##### How to send data
     
     Url: /api/post
     Params: name, email, message
