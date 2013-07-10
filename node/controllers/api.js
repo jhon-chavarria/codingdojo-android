@@ -1,13 +1,15 @@
 var request = require('request');
 var models
+    , config
     , websocket
     , string = require('string')
     , moment = require('moment');
 
 moment.lang("es");
-exports.setup = function( _models, _websocket ){
+exports.setup = function( _models, _websocket, _config ){
     models = _models;
     websocket = _websocket;
+    config = _config;
 };
 
 function webSocketSendData (data){
