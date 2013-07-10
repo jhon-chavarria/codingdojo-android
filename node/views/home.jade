@@ -1,0 +1,25 @@
+extend layout
+block content
+    div(class="container-fluid my")
+        if( data.items.length > 0 )
+            each item in data.items
+                div(class="span6")
+                    div(class="widget",id="#{item.id}")
+                        div(class="widget-title")
+                            h4 #{item.name}
+                            span(class="tools")
+                                a(href="JavaScript:void(0);") #{item.registered}
+                        div(class="widget-body")
+                            p #{item.message}
+    script.
+        $(document).on("ready", open_ws);
+            function open_ws(){
+                websocket.on("ws_getData", getMessage);
+            }
+            function getMessage(data){
+                custom.add( data )
+            }
+            custom.time.save();
+            setInterval(function(){
+              custom.time.action();
+            },1000);
