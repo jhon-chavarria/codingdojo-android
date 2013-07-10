@@ -16,6 +16,7 @@
         android:layout_alignLeft="@+id/send"
         android:layout_alignRight="@+id/send"
         android:layout_below="@+id/send"
+        android:onClick="GoToRead"
         android:layout_marginTop="16dp"
         android:text="Ver comentarios" />
 
@@ -26,6 +27,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:onClick="GoToSend"
         android:text="Enviar comentario" />
 
 </RelativeLayout>
