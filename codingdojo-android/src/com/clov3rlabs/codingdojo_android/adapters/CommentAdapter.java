@@ -1,9 +1,11 @@
-package com.example.codingdojo_android.adapters;
+package com.clov3rlabs.codingdojo_android.adapters;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
-import com.example.codingdojo_android.entities.Comment;
-import com.example.codingdojo_android.R;
+
+import com.clov3rlabs.codingdojo_android.R;
+import com.clov3rlabs.codingdojo_android.entities.Comment;
+
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;

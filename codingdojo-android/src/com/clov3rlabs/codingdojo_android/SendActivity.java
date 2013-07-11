@@ -1,4 +1,4 @@
-package com.example.codingdojo_android;
+package com.clov3rlabs.codingdojo_android;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -20,8 +20,8 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.codingdojo_android.adapters.CommentAdapter;
-import com.example.codingdojo_android.entities.Comment;
+import com.clov3rlabs.codingdojo_android.adapters.CommentAdapter;
+import com.clov3rlabs.codingdojo_android.entities.Comment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

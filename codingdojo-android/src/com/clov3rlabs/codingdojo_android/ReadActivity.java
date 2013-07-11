@@ -1,4 +1,4 @@
-package com.example.codingdojo_android;
+package com.clov3rlabs.codingdojo_android;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.codingdojo_android.adapters.CommentAdapter;
-import com.example.codingdojo_android.entities.Comment;
+import com.clov3rlabs.codingdojo_android.adapters.CommentAdapter;
+import com.clov3rlabs.codingdojo_android.entities.Comment;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

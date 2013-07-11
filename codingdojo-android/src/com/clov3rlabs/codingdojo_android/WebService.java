@@ -1,4 +1,4 @@
-package com.example.codingdojo_android;
+package com.clov3rlabs.codingdojo_android;
 
 
  
