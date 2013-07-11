@@ -4,7 +4,7 @@
 
 ##### How to change you're domain
 
-    config.js replace http://jhon.clov3r.net to you're domain
+    config.js replace nodejs.clov3r.net to you're domain
 
 ##### How to change port
     app.js replace 4000 to you're port
