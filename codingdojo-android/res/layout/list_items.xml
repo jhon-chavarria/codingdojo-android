@@ -9,15 +9,6 @@
     tools:context=".ReadActivity" >
 
     <TextView
-        android:id="@+id/text_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name_list"
-        android:layout_below="@+id/name_list"
-        android:layout_marginTop="16dp"
-        android:text="TextView" />
-
-    <TextView
         android:id="@+id/name_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,5 +17,23 @@
         android:layout_marginTop="30dp"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_list"
+        android:layout_below="@+id/text_list"
+        android:layout_marginTop="17dp"
+        android:text="fecha" />
+
+    <TextView
+        android:id="@+id/text_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_list"
+        android:layout_below="@+id/name_list"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
 
 </RelativeLayout>
