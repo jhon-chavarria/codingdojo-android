@@ -11,9 +11,10 @@ public class Comment {
 	
 	/** Attributes **/
 	private String id;
+	private	 String name;
 	private	 String email;
 	private	 String message;
-	private	 String date;
+	private	 String registered;
 	
 	
 	/** Methods **/    
@@ -38,9 +39,17 @@ public class Comment {
 		this.message = message;
 	}
 	public String getDate() {
-		return date;
+		return registered;
 	}
 	public void setDate(String date) {
-		this.date = date;
+		this.registered = date;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }

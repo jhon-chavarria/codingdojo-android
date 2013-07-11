@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">codingdojo-android</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Hello!</string>
+    <string name="server_url">http://nodejs.clov3r.net/api</string>
+    <string name="downloading">Descargando comentarios</string>
+    <string name="sending">Enviando comentario</string>    
 
 </resources>
