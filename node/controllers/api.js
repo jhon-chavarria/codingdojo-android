@@ -42,8 +42,6 @@ exports.webSocketStart = function (data){
 
 exports.post = function(req, res){
     function out(  ){
-        res.send('{"status":false,"error":"Soy un error wuahahahahaha"}');
-        /*
         var obj = {};
         obj.name = req.body.name;
         obj.email = req.body.email;
@@ -52,7 +50,6 @@ exports.post = function(req, res){
         var obj_response = {};
         obj_response.status = true;
         res.send(JSON.stringify(obj_response));
-        */
     }
     return out( );
 }
