@@ -64,7 +64,6 @@ public class ReadActivity extends Activity {
 
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
-
 			}
 
 			return null;

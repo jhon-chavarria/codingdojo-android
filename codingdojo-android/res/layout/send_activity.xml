@@ -47,7 +47,10 @@
         android:layout_below="@+id/header_text"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Nombres" />
+        android:hint="Nombres" >
+
+        <requestFocus />
+    </EditText>
 
     <EditText
         android:id="@+id/email"
@@ -59,8 +62,6 @@
         android:ems="10"
         android:hint="Correo"
         android:inputType="textEmailAddress" >
-
-        <requestFocus />
     </EditText>
 
 </RelativeLayout>
