@@ -47,7 +47,9 @@ exports.post = function(req, res){
         obj.email = req.body.email;
         obj.message = req.body.message;
         webSocketSendData(obj);
-        res.send('{"status":true}');
+        var obj_response = {};
+        obj_response.status = true;
+        res.send(JSON.stringify(obj_response));
     }
     return out( );
 }
