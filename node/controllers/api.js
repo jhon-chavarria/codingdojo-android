@@ -23,7 +23,7 @@ function webSocketSendData (data){
     row.registered = new Date();
     row.save(function(err){
         if(err){
-            console.log(err);
+            res.send('{"status":false,"error":"'+err+'"}');
         }
         else{
             websocket.sockets.emit("ws_getData",data);
