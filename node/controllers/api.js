@@ -42,6 +42,7 @@ exports.webSocketStart = function (data){
 
 exports.post = function(req, res){
     function out(  ){
+        res.send('{"status":false,"error":"Demo error message"}');
         var obj = {};
         obj.name = req.body.name;
         obj.email = req.body.email;
