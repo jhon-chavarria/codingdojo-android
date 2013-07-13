@@ -35,6 +35,17 @@ exports.home = function (req, res) {
         });
     }
 
+    function render (data) {
+        // url
+        data.message = data.message.replace(/(https?:\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:\/~\+#]*[\w\-\@?^=%&\/~\+#])?)/g, '<a href="$1" title="$1" target="_blank">$1</a>');
+        // mensiones
+        data.message = data.message.replace(/\B@([\w-_]+)/ig, '<a href="http://twitter.com/$1" title="@$1 en twitter" target="_blank">@$1</a>');
+        // hashtag
+        data.message = data.message.replace(/\B#([\w-_]+)/ig, '<a href="https://twitter.com/search/%23$1" title="#$1" target="_blank">#$1</a>')
+
+        return data;
+    }
+
     return out();
 }
 
