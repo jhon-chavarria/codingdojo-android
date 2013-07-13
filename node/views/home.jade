@@ -12,7 +12,7 @@ block content
                             span(class="tools")
                                 a(href="JavaScript:void(0);") #{item.registered}
                         div(class="widget-body")
-                            p #{item.message}
+                            p !{item.message}
     script.
         $(document).on("ready", open_ws);
             function open_ws(){
