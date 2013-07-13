@@ -24,7 +24,7 @@ exports.home = function (req, res) {
                     objItem.email = item.email;
                     objItem.message = item.message;
                     objItem.registered = item.registered; //moment(item.registered).fromNow();
-                    items.push(objItem);
+                    items.push(render(objItem));
                 });
                 data.items = items;
             }
