@@ -41,6 +41,7 @@ controllers.pages.setup(models, config);
 
 // Page route
 app.get("/",controllers.pages.home);
+app.get("/streaming",controllers.pages.streaming);
 
 var server = require('http').createServer(app)
 var WebSocket = require("socket.io").listen( server );
