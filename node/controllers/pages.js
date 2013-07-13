@@ -37,3 +37,11 @@ exports.home = function (req, res) {
 
     return out();
 }
+
+exports.streaming = function (req, res) {
+    function out() {
+        res.send('<iframe width="420" height="315" src="http://www.youtube.com/embed/vRdUqGelMVA" frameborder="0" allowfullscreen></iframe>');
+    }
+
+    return out();
+}
